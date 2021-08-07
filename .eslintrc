@@ -13,7 +13,18 @@
       ],
       "files": ["*.ts"],
       "rules": {
-        "indent": ["warn", 2]
+        "indent": ["warn", 2],
+        "no-trailing-spaces": "warn",
+        "key-spacing": "warn",
+        "keyword-spacing": "warn",
+        "comma-spacing": "warn",
+        "arrow-spacing": "warn",
+        "space-before-function-paren": "warn",
+        "semi": "warn",
+        "space-infix-ops": "warn",
+        "space-before-blocks": "warn",
+        "object-curly-spacing": "warn",
+        "no-unused-vars": "warn",
       }
     }
   ]

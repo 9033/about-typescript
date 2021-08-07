@@ -14,22 +14,22 @@ console.log(account);
 // union (enum)
 type presidents = "돈까스" | "알밥" | "볶음밥"
 
-function showPresidents(name: presidents | presidents[]){
-  console.log(name)
+function showPresidents (name: presidents | presidents[]) {
+  console.log(name);
 }
 
-showPresidents("볶음밥")
+showPresidents("볶음밥");
 
-const best: presidents = "돈까스"
-const good: presidents = "알밥"
-const names = [best, good]
-showPresidents(names)
+const best: presidents = "돈까스";
+const good: presidents = "알밥";
+const names = [best, good];
+showPresidents(names);
 
-function showPresident(name: presidents): presidents{
-  console.log(name)
-  return name
+function showPresident (name: presidents): presidents {
+  console.log(name);
+  return name;
 }
-showPresident("돈까스")
+showPresident("돈까스");
 
 // structural type system
 interface Point {
@@ -37,6 +37,12 @@ interface Point {
   y: number;
 }
 
-const logPoint = (p: Point) => `${p.x}, ${p.y}`
-const point = { x: 12, y:26 };
-console.log(logPoint(point))
+const logPoint = (p: Point) => `${p.x}, ${p.y}`;
+const point = {x: 12, y: 26};
+console.log(logPoint(point));
+
+const targetPoint = {
+  x: 1, y: 2
+};
+
+console.log(logPoint(targetPoint));
