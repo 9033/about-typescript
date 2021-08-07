@@ -24,7 +24,7 @@
         "space-infix-ops": "warn",
         "space-before-blocks": "warn",
         "object-curly-spacing": "warn",
-        "no-unused-vars": "warn",
+        "no-unused-vars": "warn"
       }
     }
   ]
